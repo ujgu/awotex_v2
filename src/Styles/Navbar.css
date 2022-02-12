@@ -11,11 +11,11 @@ nav {
   width: 100%;
   height: auto;
   background-color: #000;
-  opacity: 0.9;
   /* sticky */
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 nav > ul {
   display: flex;
@@ -27,24 +27,85 @@ nav > ul {
   height: auto;
   padding: 0.5rem 1rem;
 }
-nav > ul > li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+nav > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
 }
 nav > ul > li > img {
-    width: auto;
-    height: 50px;
+  width: auto;
+  height: 50px;
 }
-.NavRight{
-    display: flex;
-    width: auto;
-    height: auto;
+.NavRight {
+  display: flex;
+  width: auto;
+  height: auto;
+  color: #fff;
 }
 .NavRight > img {
-    width: auto;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 1rem;
-    overflow: hidden;
+  width: auto;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  overflow: hidden;
+  border: 3px solid rgb(34, 34, 34);
+}
+.NavRight > img:hover {
+  border: 3px solid #505050;
+  cursor: pointer;
+}
+.NavRight > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  text-align: center;
+}
+.NavRight > button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgb(80, 80, 80);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  width: auto;
+  width: 80px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.NavRight > button:hover {
+  background-color: #f831ff;
+}
+
+.NavRight > button > span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.NavRight > button > span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.NavRight > button:hover span {
+  padding-right: 25px;
+}
+.NavRight > button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.NavButtons {
+  width: 80px;
+  height: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
 }

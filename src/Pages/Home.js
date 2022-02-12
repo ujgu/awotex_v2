@@ -1,7 +1,8 @@
 import React from 'react'
+import "../Styles/Home.css"
 
 export default function Home() {
   return (
-    <div>Home page</div>
+    <div className='Home'>Home page</div>
   )
 }

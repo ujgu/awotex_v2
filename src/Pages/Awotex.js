@@ -4,6 +4,7 @@ import Navbar from "../Components/Navbar";
 import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Games from "../Pages/Games";
+import Profile from "../Pages/Profile";
 import "../Styles/Awotex.css";
 
 export default function Awotex(props) {
@@ -15,6 +16,7 @@ export default function Awotex(props) {
           <Route path="" element={<Home />} />
           <Route path="games" element={<Games />} />
           <Route path="about" element={<About />} />
+          <Route path="profile" element={<Profile />} />
         </Route>
       </Routes>
     </BrowserRouter>
