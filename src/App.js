@@ -6,7 +6,7 @@ import Login from "./Pages/Login";
 
 const App = () => {
   const { loginWithRedirect, logout, isAuthenticated, isLoading, user } = useAuth0();
-  // console.log("user", user);
+  console.log("user", user);
 
   return <div className="App">
     { 

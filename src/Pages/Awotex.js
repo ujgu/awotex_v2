@@ -16,7 +16,7 @@ export default function Awotex(props) {
           <Route path="" element={<Home />} />
           <Route path="games" element={<Games />} />
           <Route path="about" element={<About />} />
-          <Route path="profile" element={<Profile user={props.user} />} />
+          <Route path="profile" element={<Profile user={props.user} onClick={props.logout} />} />
         </Route>
       </Routes>
     </BrowserRouter>

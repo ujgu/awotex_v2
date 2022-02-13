@@ -10,8 +10,110 @@
     display: flex;
     width: 90%;
     height: auto;
-    background-color: #fff;
+    background-color: rgb(19, 19, 19);
+    border-radius: 5px;
     justify-content: center;
     align-items: center;
     margin-top: 60px;
+    flex-direction: column;
 }
+.ProfileTop{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 80px;
+    font-weight: 700;
+    font-size: x-large;
+    color: #fff;
+
+}
+.ProfileContent{
+    display: flex;
+    width: 90%;
+    height: auto;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+.ProfileContentLeft{
+    display: flex;
+    width: 70%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+.ProfileContentRight{
+    display: flex;
+    width: 30%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.ProfilePic{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.ProfilePic img{
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid rgb(34, 34, 34);
+}
+.ProfilePic > img:hover {
+    border: 3px solid #505050;
+    cursor: pointer;
+  }
+  .light{
+      font-size: 15px;
+      color: rgb(160, 160, 160);
+  }
+  .ProfileContentBottom{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  .ProfileContentBottom > button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(80, 80, 80);
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    width: 30%;
+    height: 35px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .ProfileContentBottom > button:hover {
+    background-color: #f831ff;
+  }
+  
+  .ProfileContentBottom > button > span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .ProfileContentBottom > button > span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .ProfileContentBottom > button:hover span {
+    padding-right: 25px;
+  }
+  .ProfileContentBottom > button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
