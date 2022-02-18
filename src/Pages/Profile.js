@@ -2,12 +2,11 @@ import React from "react";
 import "../Styles/Profile.css";
 
 export default function Profile(props) {
-  console.log(props);
   return (
     <div className="Profile">
       <div className="ProfileContainer">
         <div className="ProfileTop">
-          Welcome to your profile, {props.user.name}!
+          Welcome to your Awotex profile, {props.user.name}!
         </div>
         <div className="ProfileContent">
           <div className="ProfileContentLeft">
